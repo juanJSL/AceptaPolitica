@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/tuNombreTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:text="Tu numbre" />
+
+    <EditText
+        android:id="@+id/nombreET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="30px"
+        android:text="Nombre" />
+
+    <Button
+        android:id="@+id/verificaBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:text="Verificar"
+        android:onClick="lanzarVerifica"/>
+
+    <TextView
+        android:id="@+id/resultadoTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:text="Resultado:" />
+
+
+</LinearLayout>
