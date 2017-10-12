@@ -19,7 +19,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="15pt"
-        android:text="Nombre" />
+        android:text="Nombre"/>
 
     <TextView
         android:id="@+id/tuEdadTV"
@@ -35,7 +35,7 @@
         android:ems="10"
         android:inputType="number"
         android:textSize="15pt"
-        android:text="Edad" />
+        android:text="Edad"/>
 
     <Button
         android:id="@+id/verificaBT"

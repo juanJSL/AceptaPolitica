@@ -17,7 +17,8 @@ public class Verifica extends AppCompatActivity {
         //------Relaciono el textView y escribio el texto con los datos obtenidos del MainActivity
         TextView nombreTV = (TextView) findViewById(R.id.nombreTV);
         final Bundle bundle = getIntent().getExtras();
-        nombreTV.setText("Hola " + bundle.get("NOMBRE") + " ¿Aceptas lapolitica de privacidad?");
+        nombreTV.setText("Hola " + bundle.get("NOMBRE") + ", tu edad es " + bundle.getInt("EDAD") +
+                " años. ¿Aceptas lapolitica de privacidad?");
         //int edad =
 
 

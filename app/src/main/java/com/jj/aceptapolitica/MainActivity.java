@@ -9,10 +9,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.FileNotFoundException;
+
 public class MainActivity extends AppCompatActivity {
     private final static int CODIGO = 0;
     Button btVerificar;
     TextView resultado;
+    int edad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +25,19 @@ public class MainActivity extends AppCompatActivity {
         btVerificar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                lanzarVerifica();
+                EditText etEdad = (EditText) findViewById(R.id.edadET);
+
+                edad=-1;
+                try {
+                    edad = Integer.parseInt(etEdad.getText().toString());
+                    if(edad>=1)
+                        lanzarVerifica();
+                    else
+                        Toast. makeText(getApplicationContext(), "La edad introducida no es un valor valido", Toast. LENGTH_LONG).show();
+                }catch(NumberFormatException nfe){
+                    Toast. makeText(getApplicationContext(), "La edad introducida no es un valor valido", Toast. LENGTH_LONG).show();
+                }
+
             }
         });
     }
@@ -30,8 +45,7 @@ public class MainActivity extends AppCompatActivity {
     public void lanzarVerifica(){
         EditText etNombre = (EditText) findViewById(R.id.nombreET) ;
         String nombre = etNombre.getText().toString();
-        EditText etEdad = (EditText) findViewById(R.id.edadET);
-        int edad = Integer.parseInt(etEdad.getText().toString());
+
 
         Intent i = new Intent(this, Verifica.class);
         Bundle bundle = new Bundle();
@@ -50,6 +64,4 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-
-
 }
