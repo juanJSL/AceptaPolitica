@@ -9,8 +9,8 @@
         android:id="@+id/tuNombreTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30px"
-        android:text="Tu numbre" />
+        android:textSize="15pt"
+        android:text="Tu nombre" />
 
     <EditText
         android:id="@+id/nombreET"
@@ -18,22 +18,37 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="30px"
+        android:textSize="15pt"
         android:text="Nombre" />
+
+    <TextView
+        android:id="@+id/tuEdadTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt"
+        android:text="Edad" />
+
+    <EditText
+        android:id="@+id/edadET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="15pt"
+        android:text="Edad" />
 
     <Button
         android:id="@+id/verificaBT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30px"
-        android:text="Verificar"
-        android:onClick="lanzarVerifica"/>
+        android:textSize="15pt"
+        android:text="Verificar"/>
 
     <TextView
         android:id="@+id/resultadoTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30px"
+        android:textSize="15pt"
         android:text="Resultado:" />
 
 

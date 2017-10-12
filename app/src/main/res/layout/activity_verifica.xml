@@ -6,24 +6,24 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nombreTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30px"
+        android:textSize="15pt"
         android:text="" />
 
     <Button
         android:id="@+id/aceptoBT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30px"
+        android:textSize="15pt"
         android:text="ACEPTO" />
 
     <Button
         android:id="@+id/rechazoBT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30px"
+        android:textSize="15pt"
         android:text="RECHAZO" />
 
 </LinearLayout>
